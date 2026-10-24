@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react'
-import { profile, skills, projects, education, highlights } from './data.js'
 import { profile, skills, projects, education, highlights, certifications } from './data.js'
 
 const links = [

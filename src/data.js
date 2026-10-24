@@ -68,10 +68,6 @@ export const highlights = [
     detail:
       'Backend lead on a group project. Built the Express API, authentication and sessions, multi-branch data separation, data backup, and the skill extraction and recommendation engine, and helped design the overall system flow. Also deployed the system (Railway, Render, Vercel) and wrote the technical documentation.',
   },
-  {
-    title: 'Certifications & Courses',
-    detail: 'e.g. freeCodeCamp, Coursera, Google, Meta, or your school\'s certifications.',
-  },
 ]
 
 export const certifications = [
