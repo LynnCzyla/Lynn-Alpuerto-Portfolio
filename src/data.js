@@ -36,11 +36,13 @@ export const projects = [
     repo: 'https://github.com/LynnCzyla/ResourceManagementRecommenderSystem-1.git', // ilagay ang GitHub link mo
   },
   {
-    title: 'Project Two',
-    description: 'e.g. Inventory or enrollment system with a normalized database design, and the number of users or records it handles.',
-    tags: ['Python', 'MySQL', 'Docker'],
+    title: 'MAICRAFTS',
+    description:
+      'Full-stack e-commerce site for a handmade floral crafts shop. I worked mainly on the security of login and sign-up (email OTP verification, two-factor authentication, bcrypt password hashing), audit logging, and email notifications.',
+    tags: ['React', 'Node.js', 'Express', 'Supabase', 'PostgreSQL', 'Nodemailer', 'bcrypt', '2FA (TOTP)'],
     live: '#',
-    repo: '#',
+    status: 'deploying', // tanggalin ito at ilagay ang totoong link sa `live` kapag deployed na
+    repo: 'https://github.com/LynnCzyla/MAICRAFTS', // palitan kung iba ang repo name
   },
   {
     title: 'Project Three',
@@ -71,9 +73,9 @@ export const highlights = [
 ]
 
 export const certifications = [
-  { title: 'Introduction to SQL', issuer: 'DataCamp', date: 'October 2026' },
-  { title: 'Google Cloud Fundamentals: Core Infrastructure', issuer: 'Google Cloud', date: 'August 2026' },
-  { title: 'SHE++ Workshop: Strategic Foresight and Introduction to Technopreneurship', issuer: 'PhilDev S&T Development Foundation, in partnership with Wells Fargo', date: 'June 4, 2025' },
-  { title: 'SHE++ Workshop: Design Thinking', issuer: 'PhilDev S&T Development Foundation, in partnership with Wells Fargo', date: 'June 3, 2025' },
   { title: 'Computer Systems Servicing (CSS) NC II', issuer: 'TESDA', date: 'National Certificate II Passer' },
+  { title: 'Google Cloud Fundamentals: Core Infrastructure', issuer: 'Google Cloud', date: 'August 2026' },
+  { title: 'Introduction to SQL', issuer: 'DataCamp', date: 'October 2026', image: '/certs/datacamp-intro-sql.png' },
+  { title: 'SHE++ Workshop: Strategic Foresight and Introduction to Technopreneurship', issuer: 'PhilDev S&T Development Foundation, in partnership with Wells Fargo', date: 'June 4, 2025', image: '/certs/she-strategic-foresight.png' },
+  { title: 'SHE++ Workshop: Design Thinking', issuer: 'PhilDev S&T Development Foundation, in partnership with Wells Fargo', date: 'June 3, 2025', image: '/certs/she-design-thinking.png' },
 ]

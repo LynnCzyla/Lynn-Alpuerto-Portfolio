@@ -1,6 +1,23 @@
 import { useEffect, useState } from 'react'
 import { profile, skills, projects, education, highlights, certifications } from './data.js'
 
+import Swal from 'sweetalert2'
+
+function showDeploying(title) {
+  const css = getComputedStyle(document.documentElement)
+  const v = (name) => css.getPropertyValue(name).trim()
+  Swal.fire({
+    icon: 'info',
+    title: 'Deployment in progress',
+    text: `${title} isn't live yet. You can check the source code on GitHub in the meantime.`,
+    background: v('--surface'),
+    color: v('--text'),
+    confirmButtonText: 'Got it',
+    confirmButtonColor: v('--accent'),
+    didOpen: () => { Swal.getConfirmButton().style.color = v('--accent-ink') },
+  })
+}
+
 const links = [
   ['about', 'About'],
   ['projects', 'Projects'],
@@ -80,7 +97,11 @@ function Projects() {
               {p.tags.map((t) => <li key={t}>{t}</li>)}
             </ul>
             <div className="card-links">
-              {p.live && <a href={p.live} target="_blank" rel="noreferrer">Live ↗</a>}
+            {p.live && (
+                  p.status === 'deploying'
+                    ? <a href="#" onClick={(e) => { e.preventDefault(); showDeploying(p.title) }}>Live ↗</a>
+                    : <a href={p.live} target="_blank" rel="noreferrer">Live ↗</a>
+                )}
               {p.repo && <a href={p.repo} target="_blank" rel="noreferrer">Code ↗</a>}
             </div>
           </article>
@@ -110,13 +131,14 @@ function Education() {
           </div>
         ))}
       </div>
-      <h4 className="subhead">Certifications & Professional Development</h4>
+      <h4 className="subhead">Courses, Certifications & Training</h4>
       <ul className="certs">
         {certifications.map((c) => (
           <li className="card" key={c.title}>
             <span className="period">{c.date}</span>
             <h4>{c.title}</h4>
             <p>{c.issuer}</p>
+            {c.image && <a href={c.image} target="_blank" rel="noreferrer">View certificate ↗</a>}
           </li>
         ))}
       </ul>
