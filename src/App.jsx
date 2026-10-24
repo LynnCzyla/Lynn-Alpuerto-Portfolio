@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { profile, skills, projects, education, highlights } from './data.js'
+import { profile, skills, projects, education, highlights, certifications } from './data.js'
 
 const links = [
   ['about', 'About'],
@@ -110,6 +111,16 @@ function Education() {
           </div>
         ))}
       </div>
+      <h4 className="subhead">Certifications & Professional Development</h4>
+      <ul className="certs">
+        {certifications.map((c) => (
+          <li className="card" key={c.title}>
+            <span className="period">{c.date}</span>
+            <h4>{c.title}</h4>
+            <p>{c.issuer}</p>
+          </li>
+        ))}
+      </ul>
     </Section>
   )
 }
