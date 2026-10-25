@@ -45,11 +45,11 @@ export const projects = [
     repo: 'https://github.com/LynnCzyla/MAICRAFTS', // palitan kung iba ang repo name
   },
   {
-    title: 'Project Three',
-    description: 'e.g. A service that integrates a third-party API, with caching, validation, and tests. Link to API docs if you have them.',
-    tags: ['Node.js', 'MongoDB', 'REST API'],
-    live: '#',
-    repo: '#',
+    title: 'Smart Entrance, Exit & Attendance Monitoring System',
+    description:
+      'Desktop-based entrance and exit monitoring system for Pamantasan ng Lungsod ng Pasig (group project, student module). I built the core face recognition logic: a Python FastAPI service using SCRFD face detection and ArcFace embeddings, guided 5-pose registration with image quality checks, and a cosine-similarity matching endpoint that logs every authentication attempt with its confidence score.',
+    tags: ['Python', 'FastAPI', 'ArcFace', 'OpenCV', 'MediaPipe', 'Node.js', 'Express', 'MySQL', 'React'],
+    repo: 'https://github.com/LynnCzyla/Smart-Entrance-Exit-and-Attendance-Monitoring-System', // palitan kung iba ang repo name
   },
 ]
 
