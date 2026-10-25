@@ -8,7 +8,7 @@ export const profile = {
     "Hi! I'm a 4th year student about to graduate, and I enjoy building the part of an app users don't see: APIs, databases, authentication, and the logic that keeps everything running. I care about clean code, security, and systems that are easy to maintain.",
     "I'm looking for my first opportunity, an internship or entry-level role, where I can learn from a team and contribute from day one. This portfolio runs on a small Express API I built myself, with input validation, rate limiting, and email delivery through Brevo.",
   ],
-  resumeUrl: '#',
+  resumeUrl: '/resume/Lynn_Czyla_Alpuerto_CV.pdf',
   socials: [
     { label: 'GitHub', url: 'https://github.com/LynnCzyla' },
     { label: 'LinkedIn', url: 'https://www.linkedin.com/in/lynn-czyla-alpuerto-4a3847445' },
