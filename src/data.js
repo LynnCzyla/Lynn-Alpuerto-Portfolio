@@ -65,7 +65,7 @@ export const projects = [
     live: '#',
     status: 'deploying', 
     tags: ['React', 'Node.js', 'Express', 'MySQL', 'Groq API', 'Multer'],
-    repo: 'https://github.com/LynnCzyla/SIA-CMS', // palitan kung iba ang repo name
+    repo: 'https://github.com/LynnCzyla/SIA-CMS', 
   },
 ]
 
