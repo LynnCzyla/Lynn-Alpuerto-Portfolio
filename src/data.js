@@ -1,5 +1,3 @@
-// ✏️ Edit this file to make the portfolio yours. Everything on the page comes from here.
-
 export const profile = {
   name: 'Lynn Czyla Alpuerto',
   role: 'Aspiring Backend Developer',
@@ -10,7 +8,7 @@ export const profile = {
     "Hi! I'm a 4th year student about to graduate, and I enjoy building the part of an app users don't see: APIs, databases, authentication, and the logic that keeps everything running. I care about clean code, security, and systems that are easy to maintain.",
     "I'm looking for my first opportunity, an internship or entry-level role, where I can learn from a team and contribute from day one. This portfolio runs on a small Express API I built myself, with input validation, rate limiting, and email delivery through Brevo.",
   ],
-  resumeUrl: '#', // e.g. '/resume.pdf' (put the file in /public)
+  resumeUrl: '#',
   socials: [
     { label: 'GitHub', url: 'https://github.com/LynnCzyla' },
     { label: 'LinkedIn', url: 'https://www.linkedin.com/in/lynn-czyla-alpuerto-4a3847445' },
@@ -41,8 +39,8 @@ export const projects = [
       'Full-stack e-commerce site for a handmade floral crafts shop. I worked mainly on the security of login and sign-up (email OTP verification, two-factor authentication, bcrypt password hashing), audit logging, and email notifications.',
     tags: ['React', 'Node.js', 'Express', 'Supabase', 'PostgreSQL', 'Nodemailer', 'bcrypt', '2FA (TOTP)'],
     live: '#',
-    status: 'deploying', // tanggalin ito at ilagay ang totoong link sa `live` kapag deployed na
-    repo: 'https://github.com/LynnCzyla/MAICRAFTS', // palitan kung iba ang repo name
+    status: 'deploying', 
+    repo: 'https://github.com/LynnCzyla/MAICRAFTS', 
   },
   {
     title: 'Smart Entrance, Exit & Attendance Monitoring System',
@@ -51,19 +49,35 @@ export const projects = [
     tags: ['Python', 'FastAPI', 'ArcFace', 'OpenCV', 'MediaPipe', 'Node.js', 'Express', 'MySQL', 'React'],
     repo: 'https://github.com/LynnCzyla/Smart-Entrance-Exit-and-Attendance-Monitoring-System', // palitan kung iba ang repo name
   },
+  {
+    title: 'PLP Clinic Monitoring System',
+    description:
+      'Web-based system that replaces paper forms at the Pamantasan ng Lungsod ng Pasig clinic (group project). I worked on both the frontend and backend, mainly the multi-step form for adding a student’s medical information (personal, family, surgical, smoking, alcohol, drug, and maternal history) with duplicate checking and all-or-nothing saving through a database transaction, and the PDF export of the Health Services Medical Record Form.',
+    live: '#',
+    status: 'deploying', 
+    tags: ['PHP', 'MySQL', 'JavaScript', 'HTML/CSS', 'jsPDF'],
+    repo: 'https://github.com/LynnCzyla/PLP-CLINIC-M-S',
+  },
+  {
+    title: 'Hospital Content Management System',
+    description:
+      'Hospital CMS with an admin panel and a public website (group project). I built the posting module for news, announcements, and events and careers (image uploads), the editable About (mission, vision, history) and Contact pages, and the backend of the website chatbot, which uses the Groq API and answers from live hospital services and contact data.',
+    live: '#',
+    status: 'deploying', 
+    tags: ['React', 'Node.js', 'Express', 'MySQL', 'Groq API', 'Multer'],
+    repo: 'https://github.com/LynnCzyla/SIA-CMS', // palitan kung iba ang repo name
+  },
 ]
 
 export const education = [
   {
-    degree: 'Bachelor of Science in Information Technology', // change to your course
+    degree: 'Bachelor of Science in Information Technology', 
     school: 'Pamantasan ng Lungsod ng Pasig',
     period: '2023 – 2027 (Expected)',
     summary: 'Graduating student. Relevant coursework: Database Systems, Software Engineering, Data Structures and Algorithms, Operating Systems, Networking.',
   },
 ]
 
-// Capstone/thesis, org involvement, certifications, hackathons, competitions, volunteer work.
-// Add or remove items freely. These replace work experience for now.
 export const highlights = [
   {
     title: 'Capstone: Resource Management Recommender System',
